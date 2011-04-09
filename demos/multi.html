@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Multiple Players</title>
+    <style>
+      p { clear: both; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../audiojs/audio.css" />
+    <script src="../audiojs/audio.js"></script>
+  </head>
+  <body>
+    <h1>Multiple Players</h1>
+    <div>
+        <p>Player 1</p>
+        <audio src="test.mp3" preload="auto"></audio>
+    </div>
+    <div>
+        <p>Player 2</p>
+        <audio src="test.mp3" preload="auto"></audio>
+    </div>
+    <div>
+        <p>Player 3</p>
+        <audio src="test.mp3" preload="auto"></audio>
+    </div>
+    <div>
+        <p>Player 4</p>
+        <audio src="test.mp3" preload="auto"></audio>
+    </div>
+    <script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
+    </script>
+  </body>
+</html>
